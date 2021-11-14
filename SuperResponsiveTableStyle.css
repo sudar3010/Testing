@@ -1,0 +1,217 @@
+
+
+table,.selection {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  height: 30%;
+ 
+}
+
+.selection{
+  display: inline-block;
+ 
+}
+
+.tablestyle{
+  height: '60vh';
+  margin: 0;
+  padding: 0;
+  
+}
+
+table tbody{
+  overflow: scroll;
+  height: '30vh';
+}
+
+table td, table th,.selection {
+  border: 1px solid #ddd;
+  padding: 2.8px;
+  
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th,.selection {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar{
+  display: block;
+}
+.lines
+{
+  visibility: hidden;
+}
+
+.btn-group{
+  display: inline-block;
+  margin-top: 1% !important;
+}
+
+.btn-group button {
+  
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+}
+
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+
+.react-paginate ul {
+  display: inline-block;
+  margin-left: 20px;
+  padding-left: 0;
+  float: right;
+}
+
+.react-paginate li {
+  display: inline-block;
+  border: 1px solid rgb(224, 224, 224);
+  color: #000;
+  cursor: pointer;
+  margin-right: 3px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.react-paginate li a {
+    padding: 2px 5px;
+    display: inline-block;
+    color:rgb(15, 14, 14);
+    outline: none;
+    
+    
+}
+
+.react-paginate li a:hover{
+  background-color:orange;
+}
+.react-paginate li.active {
+  background-color:blue;
+  
+  outline: none;
+}
+
+.PmcS{
+  display: none;
+  
+}
+
+.Hr2
+{
+  display: none;
+}
+
+.Hr{
+  margin: 0;
+  padding: 5px;
+  width: 93%;
+}
+
+
+
+.Mview
+{
+  display: inline-block;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  table thead{
+    display: none;
+  }
+  table{
+    margin-top: 15% !important;
+
+  }
+  table,table tbody,table tr,table td{
+    display:block;
+    width:100%; /* convert each as block and making width as 100*/
+    border:none;
+  }
+  table tr:nth-child(even){
+    background-color: white;
+  }
+
+  table td{
+    position: relative;
+    
+  }
+
+  table td::before{
+    content: attr(data-label);
+    padding-left: 5px;
+    padding-right: 15px;
+    font-weight: bold;
+    
+  }
+.sidebar
+{
+  display: none;
+}
+.labels{
+  display: none;
+}
+
+.lines
+{
+  visibility:visible
+}
+
+.HederBtn
+{
+  display: none;
+  width: 90%;
+}
+.checkhide
+{
+  float:'right'
+}
+.Ids{
+ padding-left:10% !important;
+}
+.DEbuttons
+{
+  display: block;
+}
+
+.PmcS{
+  display: block;
+  width: 85%;
+}
+
+.Hr2{
+  margin: 0;
+  padding: 5px;
+  width: 93%;
+}
+
+.Mview
+{
+  clear: both;
+  display: block;
+}
+
+}
